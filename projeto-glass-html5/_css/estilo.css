@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');     /* @import url fonte do google fontes*/
+
+@font-face{
+    font-family: 'fontelogo';       /*nome da fonte que eu dei mais fica a escolha  */
+    src: url("../_fonts/bubblegum-sans-regular.otf");      /*@fonteface src url fonte direto do arquivo interno */
+}
+
+body{
+    font-family: Arial , sans-serif;
+    background-color:#dddddd;
+    color: rgba(0, 0, 0, 1)
+}
+div#interface {
+    width: 900px;
+    background-color:#ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+a {
+    color: #606060;
+    text-decoration: none;
+}
+a :hover {
+    text-decoration: underline;
+
+}
+header#cabecalho img#icone {
+    position: absolute;
+    left: 920px;
+    top: 70px;
+  
+
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px 80px; /* BACKGROUND URL colocar imagen de fundo, NO-REPEAT pra não repeti a imagem */
+}    
+header#cabecalho h1 {
+    font-family: 'fontelogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);    /*coloca sombra no texto */
+    padding: 0px;
+    margin-bottom: 0px;
+
+}
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;           /* font das letras */
+    font-size: 15pt;                                 /*tamanho da fonte */
+    color:#888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+/*formatação foto com legeda*/
+figure.foto-legenda{
+    position: relative;                                /*Se move somente no bloco definito */
+    border: 10px, solid,white;
+    box-shadow: 1px, 1px, 4px, black;               /* coloca sombra em um box*/
+    
+
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition:opacity 1s;
+    -webkit-transition:opacity 1s;
+    -moz-transition:opacity 1s;
+    -ms-transition:opacity 1s;
+    -o-transition:opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;             /* Efeito de escurecer o local*/
+}
+/* formatação do menu */
+
+nav#menu{
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;      /* retira a decoração de pontos */
+    text-transform: uppercase;                      /* almenta o tamanho da letra*/
+    position: absolute;                /* se move para qualque parte do site*/
+    top: -20px;                             /* Especifica a borda da margem superior de uma caixa  */
+    left: 400PX;
+}
+nav#menu li{
+    display: inline-block;
+    /*alinhaemblocos*/background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    /*Tempodetransiçãoqueaparece*/-webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+}
+nav#menu h1 {
+    display: none;          /*some com conteudo */
+}
+nav#menu li:hover{
+    background-color: #606060;
+}
+nav#menu a {
+    color: #000000;
+    text-decoration: none;                     /* Retira uma decoração*/
+}
+nav#menu a:hover {                         /* Hover - faz aparecer somente quando se passa o mouse em cima*/
+    color :#ffffff;
+    text-decoration: underline;             /* Decorar com um sublinhado*/
+}
+section#corpo{
+    display: block;
+    width: 490px;                       /* Largura */
+    float: left;
+    border-right: 1px solid #606060;
+    padding: 15px;                      /* Almenta o espassamento interno */
+}
+article#noticia-principal h2{
+    color: #606060;
+    background-color: #dddddd;
+    font-size: 13px;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+header#cabecalho-artigo h1 {
+    font-family: 'fontelogo' sans-serif;
+    font-size: 20pt;
+    color:#606060; 
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+header#cabecalho-artigo h2 {
+font-size: 13pt;
+color:#cecece;
+margin: 0px;
+
+}
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color: #606060;
+
+}
+.direita{
+    text-align: right;
+}
+table#tabelaespec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+table#tabelaespec td{
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+table#tabelaespec td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+table#tabelaespec td.cd{
+    background-color: #cecece;
+}
+table#tabelaespec caption{
+    color: #606060;
+    font-weight: bolder;
+    font-size: 13pt;
+}
+table#tabelaespec caption span{
+    display: block;
+    float:right;
+    margin-top: 10px;
+    font-size: 8px;
+    color: #000000;
+
+}
+aside#lateral{
+    display: block;                     /* tranforma me blocos */
+    width: 350px;
+    float: right;      
+    background-color: #dddddd;    
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0 ,0,.5)                /* Fazer flutuar a Direita*/
+}
+aside#lateral h1{
+    font-family: 'fontelogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+
+}
+footer#rodape{
+    clear: both;                    /*serve para acerta as barras laterias e colocar o rodape no local certo.*/
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    text-align: center;              /* Alinha ao centro*/
+}
